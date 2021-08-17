@@ -289,3 +289,6 @@ h1,h2{
   bottom: 15px;
   right:15px
 }
+.presentation{
+  width: 100% !important;
+}
