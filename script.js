@@ -205,7 +205,7 @@ let projects = [
         'https://github.com/matildegarelik/bookshelf'),
 
 
-    new Project(9, 'Manual CB Upload', 
+    /*new Project(9, 'Manual CB Upload', 
         `A client contact me and gave me a python script that processed CSV files. I had to develop from scratch
         a Flask application to make a browser interface to upload the files, select other processing options and then
         display results that before where printed to the console. I also deployed it to Google Cloud App Engine`, 
@@ -217,7 +217,7 @@ let projects = [
             '10- Cb/4.png',
         ], 
         'https://cb-src-dst.uc.r.appspot.com/',
-        false),
+        false),*/
 
     
 
@@ -254,7 +254,7 @@ let projects = [
         false,
         'https://github.com/matildegarelik/gestion_pedidos'),
 
-    new Project(11, 'TO DO App', 
+    /*new Project(11, 'TO DO App', 
         "As a personal project, I made this CRUD application where you can create a list of chores to do, with categories and possibility to change status. User registration and login system included.", 
         ["APACHE", "PHP", "MySQL"], 
         [
@@ -275,7 +275,7 @@ let projects = [
             '2- To do app/14.png',
         ],
         false, 
-        'https://github.com/matildegarelik/toDoApp'),
+        'https://github.com/matildegarelik/toDoApp'),*/
 
     
 
