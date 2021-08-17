@@ -247,7 +247,7 @@ h1,h2{
 }
 .card{
   height: 300px;
-  margin-bottom: 50px;
+  margin-bottom: 25px !important;
 }
 .card-text{
   font-size: 14px;
