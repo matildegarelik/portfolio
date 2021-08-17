@@ -197,6 +197,27 @@ h1,h2{
     height: 25vw !important;
   }
 }
+@media(max-width:463px){
+  .btn.btn-dark{
+    padding: 0.2rem
+  }
+  .presentation-text h1{
+    font-size: 32px;
+  }
+  .presentation-text h2{
+    font-size: 17px;
+  }
+  .presentation-text p{
+    font-size: 14px;
+  }
+  .presentation{
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+  .btn.btn-dark{
+    font-size: 14px;
+  }
+}
 
 .modal-image{
   width: 90rem;
