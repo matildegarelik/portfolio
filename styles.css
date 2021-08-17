@@ -164,7 +164,32 @@ h1,h2{
 .contact-icons svg{
   height: 80px;
 }
+.last-image{
+  max-height: 500px; 
+  display: block; 
+  margin: auto;
+}
 
+@media(max-width:750px){
+  .contact-icons{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .contact-icons svg{
+    height: 8vh;
+  }
+  .last-image{
+    height: 70vw;
+  }
+}
+@media(max-width:450px){
+  .contact-icons svg{
+    display: block;
+    height: 10vw;
+    margin: auto;
+  }
+}
 
 .modal-image{
   width: 90rem;
@@ -239,12 +264,8 @@ h1,h2{
   }
 
 }
-@media(max-width:900px){
-  .contact-icons svg{
-    height: 65px;
-  }
 
-}
+
 .card{
   height: 300px;
   margin-bottom: 25px !important;
