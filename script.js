@@ -154,6 +154,9 @@ let projects = [
             '15 - getmeananchor/5.png',
             '15 - getmeananchor/6.png',
             '15 - getmeananchor/7.png',
+            '15 - getmeananchor/8.png',
+            '15 - getmeananchor/9.png',
+        
         ], 
         'https://getme.ananchor.com/login.php',
         false),
