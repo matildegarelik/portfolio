@@ -496,18 +496,18 @@
 
     <script>
         for (project of projects) {
-            console.log(project)
+            //console.log(project)
             if(project._id == 1){
                 var card_deck = `<div class="card-deck" style="margin-top:25px;"></div>`;
                 $('#cards-container').append(card_deck)
             }
-            var new_card = `<div class="card">
+            var new_card = `<div class="card" data-toggle="modal" data-target="#modal${project._id}">
                         <div class="img-container">
                             <img src="${project.images[0]}" class="card-img-top" alt="${project.title}" style="display: block;">
                         </div>
                         
                         <div class="card-body" style="padding-top: 0.6rem"><hr>
-                            <h5 class="card-title" style="margin-bottom:0px;">${project.title}</h5>
+                            <h5 class="card-title">${project.title}</h5>
                             <p class="card-text">`
             for (var i=0; i<project.technologies.length; i++){
                 new_card+= `${project.technologies[i]}`
@@ -516,11 +516,11 @@
             }
             
             new_card += `</p>
-                            <p class="card-text"><small class="text-muted" style="font-size: 25px; color: white !important"></small></p>
-                            <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-sm btn-outline-info btn-view" data-toggle="modal" data-target="#modal${project._id}">
+                            <!-- <p class="card-text"><small class="text-muted" style="font-size: 25px; color: white !important">-</small></p>-->
+                            <!-- Button trigger modal 
+                            <button type="button" class="btn btn-outline-info btn-view" data-toggle="modal" data-target="#modal${project._id}">
                                 Ver más
-                            </button>
+                            </button>-->
                         </div>
                     </div>`
             var new_modal = `
@@ -529,8 +529,9 @@
                     <div class="modal-dialog modal-xl modal-dialog-scrollable">
                         <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title">${project.title}</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <h5 class="modal-title">${project.title}</h5>`
+                            if(project.link) new_modal += `<a href='${project.link}' target='_blank' style="margin-left:75%" class="btn btn-dark text-right">View</a>`;
+                new_modal+=`<button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
@@ -567,7 +568,7 @@
                         </div>
                         <div class="modal-footer">
                             <!--<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->`
-            if(project.link) new_modal += `<a href='${project.link}' target='_blank' style="margin-left=20px" class="btn btn-dark">View</a>`;
+            
             if(project.source) new_modal += `<a href='${project.source}' target='_blank' style="margin-left=20px" class="btn btn-dark">Source code</a>`;
 
             new_modal +=`</div>
@@ -578,6 +579,7 @@
             $('#modals').append(new_modal)
         }
     </script>
+
 
     <script>
         var myFullpage = new fullpage('#fullpage', {

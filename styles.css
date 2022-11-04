@@ -320,3 +320,14 @@ h1,h2{
   bottom: 15px;
   right:15px
 }
+
+.carousel-indicators, .carousel-control-prev-icon, .carousel-control-next-icon{
+  background-color: rgba(0,0,0,0.5);
+}
+.card{
+  cursor:pointer;
+}
+.card:hover{
+  transform: scale(1.1);
+  transition: 300ms all;
+}
