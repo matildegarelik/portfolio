@@ -89,8 +89,8 @@ let projects = [
         'https://www.youtube.com/watch?v=FeVTgzbpUCg&list=PLsYkGSTiaVj9_QuHrycJwua8XsSkmeG4G&index=1&t=5s&ab_channel=FranciscodelaTorre',
         'https://github.com/matildegarelik/tpfinal-fullstack-django'),
 
-        new Project(4, 'Product Information Management', 
-        `Administration of Product Information Management. Includes User Roles. Project for REDOCEAN Company`, 
+        new Project(4, 'PIM', 
+        `Product Information Management web platform. Includes User Roles. Project for REDOCEAN Company`, 
         ["Laravel", "PHP", "MySQL", "Javascript"], 
         [
             '18 -pim/1.png',
@@ -145,7 +145,7 @@ let projects = [
         new Project(7, 'GetMeAnanchor', 
         `Web-application to write articles and assign backlinks for them. Different user roles and stages before publishing. 
         Subscription to monthly get an amount of backlinks.`, 
-        ["PHP", "Mysql", "Paypal payments gateway", "Paypal recurring payments"], 
+        ["PHP", "Mysql", "Paypal recurring payments"], 
         [
             '15 - getmeananchor/1.png',
             '15 - getmeananchor/2.png',
