@@ -256,7 +256,7 @@ let projects = [
     
     new Project(10,"Fansbury Sports",
         `I worked in this webpage adding several features and modules. I worked with different user roles and impplemented extra functionalities for them.`,
-        ["React", "Laravel", "SQLite"],
+        ["React", "Symfony", "SQLite"],
         [
             '30 - fansbury/1.png',
             '30 - fansbury/2.png',
